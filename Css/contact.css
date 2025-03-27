@@ -79,6 +79,7 @@
 }
 .btn-success{
     transition: all .4s ease-in;
+    border: none;
 }
 
 .btn-success:hover {
