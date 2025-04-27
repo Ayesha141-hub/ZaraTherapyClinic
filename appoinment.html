@@ -104,51 +104,49 @@
     <section class="form" data-aos="fade-up">
         <div class="form-container">
 
-            <form>
-                Full name
-                <br>
-                <input type="text" placeholder="first name">
-                <br>
-                <input type="text" placeholder="last name">
-                <br>
-                Email Address
-                <br>
-                <input type="email" placeholder="@gmail.com">
-                <br>
-                Phone number
-                <br>
-                <input type="text" placeholder="0000-00000">
-                <br>
-                Appointment date
-                <br>
-                <input type="date">
-                <br>
-                Select a therapist
-                <br>
-                <select name="select a therapist" id="">
-                    <option value="Dr.Ahmed Khan">Dr.Ahmed Khan</option>
-                    <option value="Dr.Ayesha Butt">Dr.Ayesha Butt</option>
-                    <option value="Dr.Umer Farooq">Dr.Umer Farooq</option>
-                    <option value="Dr.Amina Tariq">Dr.Amina Tariq</option>
-                    <option value="Dr.Sana Javed">Dr.Sana Javed</option>
+            <form class="appointment-form">
+                <h2>Book an Appointment</h2>
+            
+                <label for="first-name">Full Name</label>
+                <div class="name-fields">
+                    <input type="text" id="first-name" placeholder="First Name" required>
+                    <input type="text" id="last-name" placeholder="Last Name" required>
+                </div>
+            
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="example@gmail.com" required>
+            
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" placeholder="000-000-00000" required>
+            
+                <label for="appointment-date">Appointment Date</label>
+                <input type="date" id="appointment-date" required>
+            
+                <label for="therapist">Select a Therapist</label>
+                <select id="therapist" required>
+                    <option value="" disabled selected>Select your therapist</option>
+                    <option value="Dr.Ahmed Khan">Dr. Ahmed Khan</option>
+                    <option value="Dr.Ayesha Butt">Dr. Ayesha Butt</option>
+                    <option value="Dr.Umer Farooq">Dr. Umer Farooq</option>
+                    <option value="Dr.Amina Tariq">Dr. Amina Tariq</option>
+                    <option value="Dr.Sana Javed">Dr. Sana Javed</option>
                 </select>
-                <br>
-                Types of session
-                <br>
-                <select name="types of session" id="">
+            
+                <label for="session-type">Type of Session</label>
+                <select id="session-type" required>
+                    <option value="" disabled selected>Select session type</option>
                     <option value="Hypnotherapist">Hypnotherapist</option>
-                    <option value="Couples and Marriage Therapy">Couples and Marriage Therapy </option>
+                    <option value="Couples and Marriage Therapy">Couples and Marriage Therapy</option>
                     <option value="CBT Therapy">CBT Therapy</option>
                     <option value="EMDR Therapy">EMDR Therapy</option>
                     <option value="Online Session">Online Session</option>
                 </select>
-                <br>
+            
                 <div class="form-submit">
                     <button type="submit" class="submit-button">Submit</button>
                 </div>
-                <br>
-
             </form>
+            
         </div>
     </section>
     <section class="pdf">
